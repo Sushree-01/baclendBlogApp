@@ -1,10 +1,10 @@
-const express = require("express");
-const cors = require("cors");
-const {connection} = require("./config/db");
-const { allRouter } = require("./Route/AllRoutes");
-const PORT = process.env.PORT || 7070;
+const express=require("express");
+const cors=require("cors");
+const {connection}=require("./config/db");
+const { allRouter }=require("./Route/AllRoutes");
+const PORT=process.env.PORT||7070;
 
-const app = express();
+const app=express();
 
 app.get("/",(req,res)=>{
     res.send("Welcome to the Backend page.")
